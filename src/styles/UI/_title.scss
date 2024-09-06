@@ -1,0 +1,39 @@
+@use '../UI/variables' as *;
+
+.title {
+  position: relative;
+  width: max-content;
+  align-items: baseline;
+
+  &__line {
+    width: .4rem;
+    height: 100%;
+    border-radius: .4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $lin_grad;
+  }
+
+  &__text {
+    width: max-content;
+    // position: relative;
+    margin: 3rem 0;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    bottom: 8%;
+
+    background-image: url(https://img.icons8.com/ios-filled/50/ffffff/forward--v1.png);
+    width: 1.7rem;
+    height: 1.7rem;
+    background-size: contain;
+  }
+}

@@ -4,45 +4,6 @@
     <title>Online  TV</title>
     <style>
        @import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Marcellus&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body {
-  background-color: #000;
-  color: #fff;
-  box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.container {
-  width: 73.25%;
-  max-width: 100rem;
-  margin: 0 auto;
-}
-
-a {
-  all: inherit;
-  cursor: pointer;
-}
-
-.header__icon {
-  background-size: 100% 100%;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.header__icon_search {
-  background-image: url(https://img.icons8.com/ios/48/ffffff/search--v1.png);
-}
-
-.header__icon_notification {
-  background-image: url(https://img.icons8.com/parakeet-line/48/ffffff/appointment-reminders.png);
-}
-
-.header__icon_profile {
-  background-image: url(https://img.icons8.com/parakeet-line/48/ffffff/test-account.png);
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -50,31 +11,6 @@ a {
   align-content: center;
   font-size: 1rem;
   padding: 0.5rem 0;
-}
-
-.main-logo {
-  display: flex;
-}
-.main-logo__icon {
-  font-size: 2.275rem;
-  font-family: "Lemonada", cursive;
-  font-weight: 700;
-  line-height: 3.5rem;
-  padding: 0;
-  width: 3.5rem;
-  height: 3.5rem;
-  border: double 0.2916666667rem transparent;
-  border-radius: 20%;
-  background-image: linear-gradient(black, black), linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  text-align: center;
-}
-.main-logo__text {
-  display: inline-block;
-  font-size: 2.45rem;
-  padding: 0.5rem;
-  font-weight: 600;
 }
 
 .nav {
@@ -125,6 +61,24 @@ a {
 .header__nav-profile .nav .nav__item:hover {
   transform: scale(1.2);
   transition: 0.6s;
+}
+
+.header__icon {
+  background-size: 100% 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header__icon_search {
+  background-image: url(https://img.icons8.com/ios/48/ffffff/search--v1.png);
+}
+
+.header__icon_notification {
+  background-image: url(https://img.icons8.com/parakeet-line/48/ffffff/appointment-reminders.png);
+}
+
+.header__icon_profile {
+  background-image: url(https://img.icons8.com/parakeet-line/48/ffffff/test-account.png);
 }
 
 .section-banner {
@@ -190,110 +144,23 @@ a {
   bottom: -1.5px;
 }
 
-.btn {
-  padding: 0.9rem 2rem;
-  margin-right: 2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 1.5rem;
-  border: none;
-}
-
-.btn_blue {
-  background: linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
-  color: white;
-  box-shadow: 0 0 2rem 0 rgba(101, 147, 153, 0.5);
-}
-
-.btn_white {
-  background: white;
-  color: rgb(66, 66, 66);
-}
-
-.slider {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem;
-}
-.slider__card {
-  width: 100%;
-}
-
-.trendshows__card,
-.trendmovies__card,
-.populargenres__card {
-  border-radius: 1rem;
-}
-
-.popularactors__img {
-  border-radius: 100%;
-  width: 100%;
-}
-
-.popularactors__name {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.title {
-  position: relative;
-  width: -moz-max-content;
-  width: max-content;
-  align-items: baseline;
-}
-.title__line {
-  width: 0.4rem;
-  height: 100%;
-  border-radius: 0.4rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
-}
-.title__text {
-  width: -moz-max-content;
-  width: max-content;
-  margin: 3rem 0;
-  padding-left: 2rem;
-  padding-right: 1rem;
-  font-weight: normal;
-  font-size: 2rem;
-}
-.title__icon {
-  display: inline-block;
-  position: absolute;
-  left: 100%;
-  bottom: 8%;
-  background-image: url(https://img.icons8.com/ios-filled/50/ffffff/forward--v1.png);
-  width: 1.7rem;
-  height: 1.7rem;
-  background-size: contain;
-}
-
-.trendmovies__btn {
-  margin: 4rem 0 2rem 0;
-}
-
-.subsections {
+.subsection {
   gap: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-.section-card {
+.subsection__card {
   border-radius: 1rem;
   padding: 1.5rem 2.5rem;
   text-align: center;
   font-size: 1.75rem;
   font-weight: 600;
 }
-.section-card__img {
+.subsection__card__img {
   padding: 0;
   width: 40%;
 }
-.section-card__name {
+.subsection__card__name {
   padding: 0;
   line-height: 80%;
 }
@@ -352,6 +219,138 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 3rem 0;
+}
+
+.btn {
+  padding: 0.9rem 2rem;
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+.btn_blue {
+  background: linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
+  color: white;
+  box-shadow: 0 0 2rem 0 rgba(101, 147, 153, 0.5);
+}
+
+.btn_white {
+  background: white;
+  color: rgb(66, 66, 66);
+}
+
+.main-logo {
+  display: flex;
+}
+.main-logo__icon {
+  font-size: 2.275rem;
+  font-family: "Lemonada", cursive;
+  font-weight: 700;
+  line-height: 3.5rem;
+  padding: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: double 0.2916666667rem transparent;
+  border-radius: 20%;
+  background-image: linear-gradient(black, black), linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-align: center;
+}
+.main-logo__text {
+  display: inline-block;
+  font-size: 2.45rem;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: baseline;
+}
+.title__line {
+  width: 0.4rem;
+  height: 100%;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
+}
+.title__text {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 3rem 0;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  font-weight: normal;
+  font-size: 2rem;
+}
+.title__icon {
+  display: inline-block;
+  position: absolute;
+  left: 100%;
+  bottom: 8%;
+  background-image: url(https://img.icons8.com/ios-filled/50/ffffff/forward--v1.png);
+  width: 1.7rem;
+  height: 1.7rem;
+  background-size: contain;
+}
+
+.slider {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.slider__card {
+  width: 100%;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  width: 73.25%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+a {
+  all: inherit;
+  cursor: pointer;
+}
+
+.trendshows__card,
+.trendmovies__card,
+.populargenres__card {
+  border-radius: 1rem;
+}
+
+.popularactors__img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.popularactors__name {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.trendmovies__btn {
+  margin: 4rem 0 2rem 0;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -428,30 +427,30 @@ footer {
             <div class="title__icon"></div>
           </h2>
         </div>
-        <div class="populargenres__subsections subsections">
-              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#fd093f 2.4%,#f383f1 100%"><img class="section-card__img" src="/img/genres-icons/hearts.svg" alt="">
-                <div class="section-card__name">Romance</div>
+        <div class="populargenres__subsections subsection">
+              <div class="subsection__card" style="background:linear-gradient(109.31deg,#fd093f 2.4%,#f383f1 100%"><img class="subsection__card__img" src="/img/genres-icons/hearts.svg" alt="">
+                <div class="subsection__card__name">Romance</div>
               </div>
-              <div class="subsections__card section-card" style="background:linear-gradient(114.5deg,#0fffda 2.22%,#3cdb77 68.84%)"><img class="section-card__img" src="/img/genres-icons/cinema.svg" alt="">
-                <div class="section-card__name">Drama</div>
+              <div class="subsection__card" style="background:linear-gradient(114.5deg,#0fffda 2.22%,#3cdb77 68.84%)"><img class="subsection__card__img" src="/img/genres-icons/cinema.svg" alt="">
+                <div class="subsection__card__name">Drama</div>
               </div>
-              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%)"><img class="section-card__img" src="/img/genres-icons/documentary.svg" alt="">
-                <div class="section-card__name">Historical</div>
+              <div class="subsection__card" style="background:linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%)"><img class="subsection__card__img" src="/img/genres-icons/documentary.svg" alt="">
+                <div class="subsection__card__name">Historical</div>
               </div>
-              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#fd093f 2.4%,#fb1378 2.41%,#fccb1a 100%)"><img class="section-card__img" src="/img/genres-icons/killer.svg" alt="">
-                <div class="section-card__name">Action</div>
+              <div class="subsection__card" style="background:linear-gradient(109.31deg,#fd093f 2.4%,#fb1378 2.41%,#fccb1a 100%)"><img class="subsection__card__img" src="/img/genres-icons/killer.svg" alt="">
+                <div class="subsection__card__name">Action</div>
               </div>
-              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#ff6472 2.4%,#fda75d 100%)"><img class="section-card__img" src="/img/genres-icons/rocket.svg" alt="">
-                <div class="section-card__name">Sci-fi</div>
+              <div class="subsection__card" style="background:linear-gradient(109.31deg,#ff6472 2.4%,#fda75d 100%)"><img class="subsection__card__img" src="/img/genres-icons/rocket.svg" alt="">
+                <div class="subsection__card__name">Sci-fi</div>
               </div>
-              <div class="subsections__card section-card" style="background:linear-gradient(110.16deg, #13547a 2.37%, #80d0c7 96.77%)"><img class="section-card__img" src="/img/genres-icons/ghost.svg" alt="">
-                <div class="section-card__name">Horror</div>
+              <div class="subsection__card" style="background:linear-gradient(110.16deg, #13547a 2.37%, #80d0c7 96.77%)"><img class="subsection__card__img" src="/img/genres-icons/ghost.svg" alt="">
+                <div class="subsection__card__name">Horror</div>
               </div>
-              <div class="subsections__card section-card" style="background:linear-gradient(109.93deg,#fff77b 2.37%,#ffbf42 50%)"><img class="section-card__img" src="/img/genres-icons/smile.svg" alt="">
-                <div class="section-card__name">Comedy</div>
+              <div class="subsection__card" style="background:linear-gradient(109.93deg,#fff77b 2.37%,#ffbf42 50%)"><img class="subsection__card__img" src="/img/genres-icons/smile.svg" alt="">
+                <div class="subsection__card__name">Comedy</div>
               </div>
-              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#1fa2ff 2.4%,#1fa2ff 2.41%,#1f535c 97.46%)"><img class="section-card__img" src="/img/genres-icons/castle.svg" alt="">
-                <div class="section-card__name">Documentary</div>
+              <div class="subsection__card" style="background:linear-gradient(109.31deg,#1fa2ff 2.4%,#1fa2ff 2.41%,#1f535c 97.46%)"><img class="subsection__card__img" src="/img/genres-icons/castle.svg" alt="">
+                <div class="subsection__card__name">Documentary</div>
               </div>
         </div>
       </div>
