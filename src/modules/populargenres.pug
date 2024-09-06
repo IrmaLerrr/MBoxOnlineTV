@@ -1,0 +1,20 @@
+mixin subsections__card(name, svg, card_lin_grad)
+ .subsections__card.section-card(style=`background:${card_lin_grad}`)
+    img(src=`/img/genres-icons/${svg}`, alt="").section-card__img
+    .section-card__name= name
+
+section.section-populargenres
+  .container.populargenres
+    .populargenres__title.title
+      .title__line
+      h2.title__text Popular Genres
+        .title__icon
+    .populargenres__subsections.subsections
+      +subsections__card('Romance', 'hearts.svg', 'linear-gradient(109.31deg,#fd093f 2.4%,#f383f1 100%').populargenres__card
+      +subsections__card('Drama', 'cinema.svg', 'linear-gradient(114.5deg,#0fffda 2.22%,#3cdb77 68.84%)').populargenres__card
+      +subsections__card('Historical', 'documentary.svg', 'linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%)').populargenres__card
+      +subsections__card('Action', 'killer.svg', 'linear-gradient(109.31deg,#fd093f 2.4%,#fb1378 2.41%,#fccb1a 100%)').populargenres__card
+      +subsections__card('Sci-fi', 'rocket.svg', 'linear-gradient(109.31deg,#ff6472 2.4%,#fda75d 100%)').populargenres__card
+      +subsections__card('Horror', 'ghost.svg', 'linear-gradient(110.16deg, #13547a 2.37%, #80d0c7 96.77%)').populargenres__card
+      +subsections__card('Comedy', 'smile.svg', 'linear-gradient(109.93deg,#fff77b 2.37%,#ffbf42 50%)').populargenres__card
+      +subsections__card('Documentary', 'castle.svg', 'linear-gradient(109.31deg,#1fa2ff 2.4%,#1fa2ff 2.41%,#1f535c 97.46%)').populargenres__card

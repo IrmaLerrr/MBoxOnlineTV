@@ -211,11 +211,13 @@ a {
 }
 
 .slider {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 .slider__card {
-  border-radius: 2rem;
+  border-radius: 1rem;
+  width: 100%;
 }
 
 .title {
@@ -251,6 +253,32 @@ a {
   width: 1.7rem;
   height: 1.7rem;
   background-size: contain;
+}
+
+.trendmovies__btn {
+  margin: 4rem 0 2rem 0;
+}
+
+.subsections {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section-card {
+  border-radius: 1rem;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.section-card__img {
+  padding: 0;
+  width: 40%;
+}
+.section-card__name {
+  padding: 0;
+  line-height: 80%;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -316,6 +344,43 @@ a {
           </h2>
         </div>
         <div class="trendmovies__slider slider"><img class="trendmovies__card slider__card" src="/img/movies/1.jpg" alt=""><img class="trendmovies__card slider__card" src="/img/movies/2.jpg" alt=""><img class="trendmovies__card slider__card" src="/img/movies/3.jpg" alt=""><img class="trendmovies__card slider__card" src="/img/movies/4.jpg" alt=""><img class="trendmovies__card slider__card" src="/img/movies/5.jpg" alt=""><img class="trendmovies__card slider__card" src="/img/movies/6.jpg" alt=""></div>
+        <button class="trendmovies__btn btn btn_blue">See more</button>
+      </div>
+    </section>
+    <section class="section-populargenres">
+      <div class="container populargenres">
+        <div class="populargenres__title title">
+          <div class="title__line"></div>
+          <h2 class="title__text">Popular Genres
+            <div class="title__icon"></div>
+          </h2>
+        </div>
+        <div class="populargenres__subsections subsections">
+              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#fd093f 2.4%,#f383f1 100%"><img class="section-card__img" src="/img/genres-icons/hearts.svg" alt="">
+                <div class="section-card__name">Romance</div>
+              </div>
+              <div class="subsections__card section-card" style="background:linear-gradient(114.5deg,#0fffda 2.22%,#3cdb77 68.84%)"><img class="section-card__img" src="/img/genres-icons/cinema.svg" alt="">
+                <div class="section-card__name">Drama</div>
+              </div>
+              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%)"><img class="section-card__img" src="/img/genres-icons/documentary.svg" alt="">
+                <div class="section-card__name">Historical</div>
+              </div>
+              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#fd093f 2.4%,#fb1378 2.41%,#fccb1a 100%)"><img class="section-card__img" src="/img/genres-icons/killer.svg" alt="">
+                <div class="section-card__name">Action</div>
+              </div>
+              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#ff6472 2.4%,#fda75d 100%)"><img class="section-card__img" src="/img/genres-icons/rocket.svg" alt="">
+                <div class="section-card__name">Sci-fi</div>
+              </div>
+              <div class="subsections__card section-card" style="background:linear-gradient(110.16deg, #13547a 2.37%, #80d0c7 96.77%)"><img class="section-card__img" src="/img/genres-icons/ghost.svg" alt="">
+                <div class="section-card__name">Horror</div>
+              </div>
+              <div class="subsections__card section-card" style="background:linear-gradient(109.93deg,#fff77b 2.37%,#ffbf42 50%)"><img class="section-card__img" src="/img/genres-icons/smile.svg" alt="">
+                <div class="section-card__name">Comedy</div>
+              </div>
+              <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#1fa2ff 2.4%,#1fa2ff 2.41%,#1f535c 97.46%)"><img class="section-card__img" src="/img/genres-icons/castle.svg" alt="">
+                <div class="section-card__name">Documentary</div>
+              </div>
+        </div>
       </div>
     </section>
     <footer> 

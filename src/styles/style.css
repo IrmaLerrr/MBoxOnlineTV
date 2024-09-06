@@ -206,11 +206,13 @@ a {
 }
 
 .slider {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 .slider__card {
-  border-radius: 2rem;
+  border-radius: 1rem;
+  width: 100%;
 }
 
 .title {
@@ -246,4 +248,30 @@ a {
   width: 1.7rem;
   height: 1.7rem;
   background-size: contain;
+}
+
+.trendmovies__btn {
+  margin: 4rem 0 2rem 0;
+}
+
+.subsections {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section-card {
+  border-radius: 1rem;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.section-card__img {
+  padding: 0;
+  width: 40%;
+}
+.section-card__name {
+  padding: 0;
+  line-height: 80%;
 }/*# sourceMappingURL=style.css.map */

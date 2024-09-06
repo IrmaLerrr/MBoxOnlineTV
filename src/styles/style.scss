@@ -230,10 +230,12 @@ a {
 }
 
 .slider {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
   &__card{
-    border-radius: 2rem;
+    border-radius: 1rem;
+    width: 100%;
   }
 }
 
@@ -276,5 +278,32 @@ a {
     width: 1.7rem;
     height: 1.7rem;
     background-size: contain;
+  }
+}
+
+.trendmovies__btn {
+  margin: 4rem 0 2rem 0;
+}
+
+.subsections{
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section-card{
+  // background: $lin_grad_romance;
+  border-radius: 1rem;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  &__img{
+    padding: 0;
+    width: 40%;
+  }
+  &__name{
+    padding: 0;
+    line-height: 80%;
   }
 }
