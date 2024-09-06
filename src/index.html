@@ -211,13 +211,30 @@ a {
 }
 
 .slider {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 .slider__card {
-  border-radius: 1rem;
   width: 100%;
+}
+
+.trendshows__card,
+.trendmovies__card,
+.populargenres__card {
+  border-radius: 1rem;
+}
+
+.popularactors__img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.popularactors__name {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .title {
@@ -380,6 +397,36 @@ a {
               <div class="subsections__card section-card" style="background:linear-gradient(109.31deg,#1fa2ff 2.4%,#1fa2ff 2.41%,#1f535c 97.46%)"><img class="section-card__img" src="/img/genres-icons/castle.svg" alt="">
                 <div class="section-card__name">Documentary</div>
               </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-popularactors">
+      <div class="container popularactors">
+        <div class="popularactors__title title">
+          <div class="title__line"></div>
+          <h2 class="title__text">Popular Actors & Directors
+            <div class="title__icon"></div>
+          </h2>
+        </div>
+        <div class="popularactors__slider slider">
+          <div class="popularactors__card slider__card"><img class="popularactors__img" src="/img/people/1.jpg" alt="">
+            <p class="popularactors__name">Samantha Bowen</p>
+          </div>
+          <div class="popularactors__card slider__card"><img class="popularactors__img" src="/img/people/2.jpg" alt="">
+            <p class="popularactors__name">Rhys Birch</p>
+          </div>
+          <div class="popularactors__card slider__card"><img class="popularactors__img" src="/img/people/3.jpg" alt="">
+            <p class="popularactors__name">James Holloway</p>
+          </div>
+          <div class="popularactors__card slider__card"><img class="popularactors__img" src="/img/people/4.jpg" alt="">
+            <p class="popularactors__name">Joshua Walton</p>
+          </div>
+          <div class="popularactors__card slider__card"><img class="popularactors__img" src="/img/people/5.jpg" alt="">
+            <p class="popularactors__name">Patrick Elliott</p>
+          </div>
+          <div class="popularactors__card slider__card"><img class="popularactors__img" src="/img/people/6.jpg" alt="">
+            <p class="popularactors__name">Morgan O'Neill</p>
+          </div>
         </div>
       </div>
     </section>

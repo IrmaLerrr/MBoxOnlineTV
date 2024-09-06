@@ -206,13 +206,30 @@ a {
 }
 
 .slider {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 .slider__card {
-  border-radius: 1rem;
   width: 100%;
+}
+
+.trendshows__card,
+.trendmovies__card,
+.populargenres__card {
+  border-radius: 1rem;
+}
+
+.popularactors__img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.popularactors__name {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .title {
