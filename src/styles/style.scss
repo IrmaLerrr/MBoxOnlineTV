@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Marcellus&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 $logo_size: 3.5rem;
 $lin_grad: linear-gradient(151deg, rgba(50, 108, 255, 1) 0%, rgba(38, 255, 242, 1) 100%);
 
@@ -55,7 +56,7 @@ a {
     display: flex;
 
     .logo_icon {
-      font-size: calc($logo_size*70/100);
+      font-size: calc($logo_size*65/100);
       font-family: "Lemonada", cursive;
       font-weight: 700;
       line-height: $logo_size;
@@ -63,7 +64,7 @@ a {
       margin: 0 auto;
       width: $logo_size;
       height: $logo_size;
-      border: double calc($logo_size/10) transparent;
+      border: double calc($logo_size/12) transparent;
       border-radius: 20%;
       background-image:
         linear-gradient(black, black), $lin_grad;
@@ -76,7 +77,7 @@ a {
       display: inline-block;
       font-size: calc($logo_size*70/100);
       padding: 0.5rem;
-      font-weight: 500;
+      font-weight: 600;
     }
   }
 }
@@ -215,6 +216,7 @@ a {
   font-size: 1rem;
   font-weight: bold;
   border-radius: calc(3rem/2);
+  border: none;
 }
 
 .btn_blue {
@@ -226,10 +228,53 @@ a {
   background: white;
   color: rgb(66, 66, 66);
 }
-.trendshows__slider{
+
+.trendshows__slider {
   display: flex;
   gap: 2rem;
 }
-.card{
+
+.card {
   border-radius: 2rem;
+}
+
+.title {
+  position: relative;
+  width: max-content;
+  align-items: baseline;
+
+  &__line {
+    width: .4rem;
+    height: 100%;
+    border-radius: .4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $lin_grad;
+  }
+
+  &__text {
+    width: max-content;
+    // position: relative;
+    margin: 3rem 0;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    bottom: 8%;               
+    // text-align: text-bottom;
+    // padding: 2px;                        
+    // transform: translate(0, -50%);
+
+    background-image: url(https://img.icons8.com/ios-filled/50/ffffff/forward--v1.png);
+    width: 1.7rem;
+    height: 1.7rem;
+    background-size: contain;
+  }
 }
