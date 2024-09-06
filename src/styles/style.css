@@ -143,7 +143,6 @@ a {
   padding: 4rem 0.5rem 4rem 0;
   box-sizing: border-box;
   width: 50%;
-  overflow: hidden;
   z-index: -1;
   position: relative;
   min-height: 40vw;
@@ -198,6 +197,7 @@ a {
 .btn_blue {
   background: linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
   color: white;
+  box-shadow: 0 0 2rem 0 rgba(101, 147, 153, 0.5);
 }
 
 .btn_white {
@@ -293,7 +293,48 @@ a {
   line-height: 80%;
 }
 
-.advertisement__img {
-  width: 100%;
-  height: 100%;
+.advertisement {
+  margin: 5rem auto;
+}
+.advertisement__title {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 600;
+}
+.advertisement__card {
+  width: 90%;
+  height: 20vw;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 2rem auto;
+  margin-right: 0;
+}
+.advertisement__card:nth-child(1) {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin-left: 0;
+}
+.advertisement__inner:nth-child(1) {
+  background-image: url(/img/ad-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.advertisement__inner:nth-child(2) {
+  background: linear-gradient(90deg, rgb(6, 13, 57) 0%, rgb(0, 0, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.advertisement__card:nth-child(2) {
+  background-image: url(/img/offer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  text-align: center;
+}
+.advertisement__btn {
+  padding: 1rem 1rem;
 }/*# sourceMappingURL=style.css.map */
