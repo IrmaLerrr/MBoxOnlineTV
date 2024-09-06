@@ -229,14 +229,14 @@ a {
   color: rgb(66, 66, 66);
 }
 
-.trendshows__slider {
+.slider {
   display: flex;
   gap: 2rem;
+  &__card{
+    border-radius: 2rem;
+  }
 }
 
-.card {
-  border-radius: 2rem;
-}
 
 .title {
   position: relative;

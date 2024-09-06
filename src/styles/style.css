@@ -205,12 +205,11 @@ a {
   color: rgb(66, 66, 66);
 }
 
-.trendshows__slider {
+.slider {
   display: flex;
   gap: 2rem;
 }
-
-.card {
+.slider__card {
   border-radius: 2rem;
 }
 
