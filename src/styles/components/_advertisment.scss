@@ -26,7 +26,7 @@
   }
 
   &__inner:nth-child(1) {
-    background-image: url(/img/ad-img.jpg);
+    background-image: url(img/ad-img.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -40,7 +40,7 @@
   }
 
   &__card:nth-child(2) {
-    background-image: url(/img/offer-bg.jpg);
+    background-image: url(img/offer-bg.jpg);
     background-size: cover;
     background-position: center;
     display: grid;

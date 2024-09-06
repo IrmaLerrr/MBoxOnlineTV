@@ -1,6 +1,6 @@
 mixin subsection__card(name, svg, card_lin_grad)
  .subsection__card(style=`background:${card_lin_grad}`)
-    img(src=`/img/genres-icons/${svg}`, alt="").subsection__card__img
+    img(src=`img/genres-icons/${svg}`, alt="").subsection__card__img
     .subsection__card__name= name
 
 section.section-populargenres
@@ -10,7 +10,7 @@ section.section-populargenres
       h2.title__text Popular Genres
         .title__icon
     .populargenres__subsections.subsection
-      +subsection__card('Romance', 'hearts.svg', 'linear-gradient(109.31deg,#fd093f 2.4%,#f383f1 100%').populargenres__card
+      +subsection__card('Romance', 'hearts.svg', 'linear-gradient(109.31deg,#fd093f 2.4%,#f383f1 100%)').populargenres__card
       +subsection__card('Drama', 'cinema.svg', 'linear-gradient(114.5deg,#0fffda 2.22%,#3cdb77 68.84%)').populargenres__card
       +subsection__card('Historical', 'documentary.svg', 'linear-gradient(109.31deg, #b936ff 2.4%, #57deda 100%)').populargenres__card
       +subsection__card('Action', 'killer.svg', 'linear-gradient(109.31deg,#fd093f 2.4%,#fb1378 2.41%,#fccb1a 100%)').populargenres__card

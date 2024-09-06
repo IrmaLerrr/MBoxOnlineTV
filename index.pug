@@ -1,0 +1,17 @@
+//- pug src/index.pug ../index.html -w -P
+doctype html
+html(lang="en")
+  head
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    title Online  TV
+    style 
+      include src/styles/style.css
+  body
+    include src/modules/header
+    include src/modules/banner
+    include src/modules/trendshows
+    include src/modules/trendmovies
+    include src/modules/populargenres
+    include src/modules/popularactors
+    include src/modules/advertisement
+    include src/modules/footer

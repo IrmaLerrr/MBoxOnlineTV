@@ -89,7 +89,7 @@
   width: 50vw;
   height: 100%;
   background-size: cover;
-  background-image: url(/img/banner-bg.jpg);
+  background-image: url(img/banner-bg.jpg);
   box-shadow: 100px 0px 48px -65px #000 inset;
 }
 
@@ -182,7 +182,7 @@
   margin-left: 0;
 }
 .advertisement__inner:nth-child(1) {
-  background-image: url(/img/ad-img.jpg);
+  background-image: url(img/ad-img.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -194,7 +194,7 @@
   text-align: center;
 }
 .advertisement__card:nth-child(2) {
-  background-image: url(/img/offer-bg.jpg);
+  background-image: url(img/offer-bg.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
