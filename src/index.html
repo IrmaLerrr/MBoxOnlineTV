@@ -51,16 +51,16 @@ a {
   font-size: 1rem;
   padding: 0.5rem 0;
 }
-.header .header__logo {
+
+.main-logo {
   display: flex;
 }
-.header .header__logo .logo_icon {
+.main-logo__icon {
   font-size: 2.275rem;
   font-family: "Lemonada", cursive;
   font-weight: 700;
   line-height: 3.5rem;
   padding: 0;
-  margin: 0 auto;
   width: 3.5rem;
   height: 3.5rem;
   border: double 0.2916666667rem transparent;
@@ -70,7 +70,7 @@ a {
   background-clip: content-box, border-box;
   text-align: center;
 }
-.header .header__logo .logo_text {
+.main-logo__text {
   display: inline-block;
   font-size: 2.45rem;
   padding: 0.5rem;
@@ -308,7 +308,7 @@ a {
 }
 .advertisement__card {
   width: 90%;
-  height: 20vw;
+  height: 15vw;
   border-radius: 2rem;
   overflow: hidden;
   margin: 2rem auto;
@@ -342,15 +342,25 @@ a {
 }
 .advertisement__btn {
   padding: 1rem 1rem;
+}
+
+footer {
+  background-color: #101012;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 3rem 0;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
   <body>
     <header>
       <div class="header container">
-        <div class="header__logo">
-          <div class="logo_icon">M</div>
-          <div class="logo_text">box</div>
+        <div class="main-logo header__logo">
+          <div class="main-logo__icon">M</div>
+          <div class="main-logo__text">box</div>
         </div>
         <nav class="header__nav-controls">
           <ul class="nav"><a href="#"> 
@@ -495,9 +505,35 @@ a {
         </div>
       </div>
     </section>
-    <footer> 
-      <div class="footer"> 
-        <h1>footer</h1>
+    <footer class="section-footer">
+      <div class="container footer">
+        <div class="col1">
+          <div class="main-logo footer__logo">
+            <div class="main-logo__icon">M</div>
+            <div class="main-logo__text">box</div>
+          </div>
+        </div>
+        <div class="col2">
+          <p>Voice over and Subtitle</p>
+          <p>Media Center</p>
+          <p>Privacy</p>
+          <p>Contact us</p>
+        </div>
+        <div class="col3">
+          <p>Voice Description</p>
+          <p>Investor Relations</p>
+          <p>Legal Provisions</p>
+        </div>
+        <div class="col4">
+          <p>Help Center</p>
+          <p>Job Opportunities</p>
+          <p>Cookies Preferences</p>
+        </div>
+        <div class="col5">
+          <p>Gift Cards</p>
+          <p>Terms of Use</p>
+          <p>Corporate Informations</p>
+        </div>
       </div>
     </footer>
   </body>

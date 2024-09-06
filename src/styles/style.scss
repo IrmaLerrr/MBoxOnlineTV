@@ -51,34 +51,33 @@ a {
   align-content: center;
   font-size: 1rem;
   padding: 0.5rem 0;
+}
 
-  .header__logo {
-    display: flex;
+.main-logo {
+  display: flex;
 
-    .logo_icon {
-      font-size: calc($logo_size*65/100);
-      font-family: "Lemonada", cursive;
-      font-weight: 700;
-      line-height: $logo_size;
-      padding: 0;
-      margin: 0 auto;
-      width: $logo_size;
-      height: $logo_size;
-      border: double calc($logo_size/12) transparent;
-      border-radius: 20%;
-      background-image:
-        linear-gradient(black, black), $lin_grad;
-      background-origin: border-box;
-      background-clip: content-box, border-box;
-      text-align: center;
-    }
+  &__icon {
+    font-size: calc($logo_size*65/100);
+    font-family: "Lemonada", cursive;
+    font-weight: 700;
+    line-height: $logo_size;
+    padding: 0;
+    width: $logo_size;
+    height: $logo_size;
+    border: double calc($logo_size/12) transparent;
+    border-radius: 20%;
+    background-image:
+      linear-gradient(black, black), $lin_grad;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+  }
 
-    .logo_text {
-      display: inline-block;
-      font-size: calc($logo_size*70/100);
-      padding: 0.5rem;
-      font-weight: 600;
-    }
+  &__text {
+    display: inline-block;
+    font-size: calc($logo_size*70/100);
+    padding: 0.5rem;
+    font-weight: 600;
   }
 }
 
@@ -221,7 +220,7 @@ a {
 .btn_blue {
   background: $lin_grad;
   color: white;
-  box-shadow: 0 0 2rem 0 rgba(101,147,153,0.5);
+  box-shadow: 0 0 2rem 0 rgba(101, 147, 153, 0.5);
 }
 
 .btn_white {
@@ -328,38 +327,44 @@ a {
 
 .advertisement {
   margin: 5rem auto;
+
   &__title {
     font-size: 3rem;
     margin: 0;
     font-weight: 600;
   }
+
   &__card {
     width: 90%;
-    height: 20vw;
+    height: 15vw;
     border-radius: 2rem;
     overflow: hidden;
     margin: 2rem auto;
     margin-right: 0;
   }
-  &__card:nth-child(1){
+
+  &__card:nth-child(1) {
     display: grid;
     grid-template-columns: 55% 45%;
     margin-left: 0;
- 
+
   }
-  &__inner:nth-child(1){
+
+  &__inner:nth-child(1) {
     background-image: url(/img/ad-img.jpg);
     background-size: cover;
     background-position: center;
-  } 
-  &__inner:nth-child(2){
+  }
+
+  &__inner:nth-child(2) {
     background: linear-gradient(90deg, rgba(6, 13, 57, 1) 0%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  &__card:nth-child(2){
+
+  &__card:nth-child(2) {
     background-image: url(/img/offer-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -368,7 +373,16 @@ a {
     align-items: center;
     text-align: center;
   }
-  &__btn{
+
+  &__btn {
     padding: 1rem 1rem;
   }
+}
+footer{
+background-color: #101012;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 3rem 0;
 }
